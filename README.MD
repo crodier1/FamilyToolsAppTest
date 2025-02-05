@@ -1,4 +1,4 @@
-Instructions: Open up in pyCharm. Navigate to main. Run main.py.
+Instructions: Open up in pyCharm or IDE of choice. Navigate to main. Run main.py. You may also just watch Recording_of_test.mp4. Not eveything in the test will be working at the time of submission.
 
 # Test Results
 1.Test to make sure error messages come up during signup such as:
