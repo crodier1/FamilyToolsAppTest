@@ -1,5 +1,7 @@
-# Test Procedures
-1. Test to make sure error messages come up during signup such as:
+Instructions: Open up in pyCharm. Navigate to main. Run main.py.
+
+# Test Results
+1.Test to make sure error messages come up during signup such as:
    1. First or last name missing
    2. Email missing or in wrong format
    3. Password and Password confirmation too short or missing, or not matching
