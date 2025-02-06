@@ -1,4 +1,3 @@
-from RandomTextGenerator import RandomTextGenerator
 from Test import Test
 
 
@@ -17,7 +16,7 @@ class TestTextField(Test):
 
         text_field.fill(random_text)
 
-        assert text_field.input_value() == random_text, "Input field did not accept text!"
+        assert text_field.input_value() == random_text, "Test Failed: Input field did not accept text!"
 
         print(f"Test Passed: User is able to enter text into the {input_name}.")
 

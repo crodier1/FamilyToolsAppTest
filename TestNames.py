@@ -1,5 +1,3 @@
-from RandomTextGenerator import RandomTextGenerator
-from SubmitSignUpForm import SubmitSignUpForm
 from Test import Test
 from TestEveryOtherField import TestEveryOtherField
 
