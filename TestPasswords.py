@@ -33,7 +33,7 @@ class TestPasswords(Test):
 
         error_locator = self.page.locator("text=Your password should be at least 8 characters long.")
 
-        assert error_locator.is_visible(), "Error message did not appear for short password!"
+        assert error_locator.is_visible(), "Test Failed: Error message did not appear for short password!"
 
         print("✅ Test Passed: Password validation error appeared as expected for password less than 8 characters.")
 
