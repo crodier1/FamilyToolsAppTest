@@ -1,5 +1,3 @@
-from playwright.async_api import expect
-
 from FillPriorItems import FillPriorItems
 from Test import Test
 from TestClickLink import TestClickLink
