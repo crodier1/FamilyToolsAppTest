@@ -17,7 +17,6 @@ class TestDeleteFamily(Test):
         self.set_wrong_password()
 
 
-
         self.page.locator("input[name='Password']").fill(self.account_info['Password'])
 
         try:
