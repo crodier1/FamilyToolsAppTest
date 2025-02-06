@@ -1,6 +1,4 @@
 from FillPriorItems import FillPriorItems
-from RandomTextGenerator import RandomTextGenerator
-from SubmitSignUpForm import SubmitSignUpForm
 from Test import Test
 
 
@@ -44,7 +42,7 @@ class TestEmailFormat(Test):
 
         is_invalid = self.page.evaluate("document.querySelector('input[type=email]').validity.valid")
 
-        assert is_invalid, f"Valid email '{valid_email}' was not accepted!"
+        assert is_invalid, f"Test Failed: Valid email '{valid_email}' was not accepted!"
 
         print("Test Passed: Valid email Accepted.")
 
