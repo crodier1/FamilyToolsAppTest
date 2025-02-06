@@ -24,5 +24,5 @@ class TestEveryOtherField(Test):
 
             assert not is_invalid, f"Test Fail: {other_id} was accepted when it shouldn't be!"
 
-            print(f"Test Passed: missing {other_id} correctly triggers validation error.")
+            print(f"✅ Test Passed: missing {other_id} correctly triggers validation error.")
 

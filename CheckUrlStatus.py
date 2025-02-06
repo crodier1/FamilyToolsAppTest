@@ -11,7 +11,7 @@ class CheckUrlStatus:
                 status = response.status
 
                 if status in (200, 201, 204):
-                    print(f"Test Passed: {url} returned a successful status code: {status}")
+                    print(f"✅ Test Passed: {url} returned a successful status code: {status}")
                     browser.close()
                     return True  # Success!
                 elif status in (404, 401, 403, 408, 500, 502, 503, 504):

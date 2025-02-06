@@ -18,7 +18,7 @@ class TestTextField(Test):
 
         assert text_field.input_value() == random_text, "Test Failed: Input field did not accept text!"
 
-        print(f"Test Passed: User is able to enter text into the {input_name}.")
+        print(f"✅ Test Passed: User is able to enter text into the {input_name}.")
 
         text_field.clear()
 

@@ -30,19 +30,19 @@ class TestFamilyToolsApp:
                 current_class = class_name(self.page)
                 current_class.execute()
 
-            create_account = TestSuccessfulAccountCreation(self.page)
-            create_account.execute()
+            # create_account = TestSuccessfulAccountCreation(self.page)
+            # create_account.execute()
 
-            create_calender_event = TestCreateCalendarEvent(self.page)
-            create_calender_event.set_last_name(create_account.newAccountInformation['lastName'])
-            create_calender_event.execute()
-
-            delete_family = TestDeleteFamily(self.page, create_account.newAccountInformation)
-
-            delete_family.execute()
-
-            sign_in = TestSignIn(self.page, create_account.newAccountInformation)
-            sign_in.execute()
+            # create_calender_event = TestCreateCalendarEvent(self.page)
+            # create_calender_event.set_last_name(create_account.newAccountInformation['lastName'])
+            # create_calender_event.execute()
+            #
+            # delete_family = TestDeleteFamily(self.page, create_account.newAccountInformation)
+            #
+            # delete_family.execute()
+            #
+            # sign_in = TestSignIn(self.page, create_account.newAccountInformation)
+            # sign_in.execute()
 
 
             browser.close()

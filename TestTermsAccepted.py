@@ -11,13 +11,13 @@ class TestTermsAccepted(Test):
         password = self.random_text.get(8, 20)
         fill_prior.execute({'Password': password, 'Confirm Password': password})
         
-        self.__terms_accepted()
+        self.__terms_not_accepted()
 
-    def __terms_accepted(self):
+    def __terms_not_accepted(self):
         self.submit.execute()
 
         error_locator = self.page.locator("text=You must agree to the Terms and Conditions and Privacy Policy.")
 
-        assert error_locator.is_visible(), "Error message did not appear for not agreeing to Terms and Conditions!"
+        assert error_locator.is_visible(), "Test Failed: Error message did not appear for not agreeing to Terms and Conditions!"
 
         print("✅ Test Passed: Terms and conditions error appeared as expected.")

@@ -26,7 +26,7 @@ class TestEmailFormat(Test):
 
         assert not is_invalid, "Test Fail: Invalid email was accepted when it shouldn't be!"
 
-        print("Test Passed: Invalid email correctly triggers validation error.")
+        print("✅ Test Passed: Invalid email correctly triggers validation error.")
 
     def __fill_names(self):
         fill_prior = FillPriorItems(self.page)
@@ -44,7 +44,7 @@ class TestEmailFormat(Test):
 
         assert is_invalid, f"Test Failed: Valid email '{valid_email}' was not accepted!"
 
-        print("Test Passed: Valid email Accepted.")
+        print("✅ Test Passed: Valid email Accepted.")
 
 
 
