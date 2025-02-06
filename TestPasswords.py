@@ -12,13 +12,13 @@ class TestPasswords(Test):
         fill_prior = FillPriorItems(self.page)
         fill_prior.execute({'firstName': self.random_text.get(), 'lastName': self.random_text.get(), "Email": self.random_text.get() + "@familytoolapp.com"})
         
-        self.__missing_emailFields()
+        self.__missing_password_fields()
 
         self.__password_too_short()
         
         self.__password_doesnt_match()
 
-    def __missing_emailFields(self):
+    def __missing_password_fields(self):
         test_every_other_name = TestEveryOtherField(self.page, self.passwordIds)
         test_every_other_name.execute()
 
