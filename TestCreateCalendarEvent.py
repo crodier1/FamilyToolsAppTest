@@ -38,7 +38,7 @@ class TestCreateCalendarEvent(Test):
 
         error_locator = self.page.locator("text=Please enter a valid name for the event.")
 
-        assert error_locator.is_visible(), "Error message did not appear for missing event name!"
+        assert error_locator.is_visible(), "Test Failed: Error message did not appear for missing event name!"
 
         print("✅ Test Passed: Error message appeared for missing event name.")
 
